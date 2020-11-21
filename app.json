@@ -1,0 +1,12 @@
+{
+  "name": "damsonbook",
+  "displayName": "damsonbook",
+  "expo": {
+    "name": "damsonbook",
+    "slug": "damsonbook",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
