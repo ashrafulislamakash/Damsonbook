@@ -1,3 +1,4 @@
+import "react-native-gesture-handler";
 import React from "react";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
@@ -31,12 +32,11 @@ const HomeStackScreen = ({ navigation }) => (
       name="Home"
       component={Home}
       options={{
-        title: "Home",
         headerLeft: () => (
           <Icon.Button
             name="ios-menu"
             size={25}
-            backgroundColor="#0009387"
+            backgroundColor="#0b2239"
             onPress={() => navigation.openDrawer()}
           ></Icon.Button>
         ),
