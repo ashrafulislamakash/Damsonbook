@@ -34,7 +34,7 @@ const Button = styled.TouchableOpacity`
 const AppBar = () => {
 	return (
 		<Container>
-			<Text>facebook</Text>
+			<Text>Damsonbook</Text>
 			<Row>
 				<Button>
 					<Feather name='search' size={29} color='black' />

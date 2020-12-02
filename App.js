@@ -1,37 +1,21 @@
-import React from 'react'
+import "react-native-gesture-handler";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
 
-import { StatusBar, ScrollView } from 'react-native'
+import Main from "./screens/Main";
 
-import styled from 'styled-components/native'
-
-import AppBar from './components/AppBar'
-import ToolBar from './components/ToolBar'
-import Users from './components/Users'
-import Story from './components/Story'
-import Feed from './components/Feed'
-
-const Container = styled.SafeAreaView`
-	flex: 1;
-`
+const Drawer = createDrawerNavigator();
 
 const App = () => {
   return (
-    <>
-      <StatusBar
-        backgroundColor='#FFFFFF'
-        barStyle='dark-content'
-      />
-      <Container>
-        <ScrollView>
-          <AppBar />
-          <ToolBar />
-          <Users />
-          <Story />
-          <Feed />
-        </ScrollView>
-      </Container>
-    </>
-  )
-}
+    <NavigationContainer>
+      <Drawer.Navigator initialRouteName="Main">
+        {/* <Drawer.Screen name="Splash" component={SplashStackScreen} /> */}
+        <Drawer.Screen name="Home" component={Main} />
+      </Drawer.Navigator>
+    </NavigationContainer>
+  );
+};
 
-export default App
+export default App;
