@@ -1,17 +1,19 @@
-# Damsonbook
-
 
 # Damsonbook - a project clone Facebook mobile app i am doing while learning react native.
 
 Installation
 Clone my repo
 https://github.com/ashrafulislamakash/Damsonbook.git
+
 cd damsonbook
+
 Use the package manager npm
 # npm install
 
-#Run Android
+Run Android & IOS
+
 npx react-native run-android
+
 npx react-native run-ios
 
 # Contributing
