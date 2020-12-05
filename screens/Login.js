@@ -56,7 +56,7 @@ const Login = ({ navigation }) => {
                 <Animatable.View animation="fadeInLeft" duration={500}>
                 </Animatable.View>
 
-                <Text style={[styles.text_footer, { color: "#122738", marginTop: 35, }]}>
+                <Text style={[styles.text_footer, { color: "#fff", marginTop: 35, }]}>
                     Password
                     </Text>
 
@@ -74,7 +74,7 @@ const Login = ({ navigation }) => {
                     <TouchableOpacity>
                         <Feather
                             name="eye-off"
-                            color="grey"
+                            color="green"
                             size={20} />
 
                         {/* <Feather
@@ -129,7 +129,7 @@ const Login = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#009387'
+        backgroundColor: '#122738'
     },
     header: {
         flex: 1,

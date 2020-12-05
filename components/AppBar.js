@@ -40,7 +40,7 @@ const AppBar = () => {
 					<Feather name='search' size={29} color='black' />
 				</Button>
 
-				<Button>
+				<Button onPress={() => navigation.navigate('Chat')} >
 					<MaterialCommunityIcons name='facebook-messenger' size={29} />
 				</Button>
 			</Row>

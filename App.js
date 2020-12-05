@@ -9,6 +9,7 @@ import SplashScreen from './screens/SplashScreen';
 import Login from './screens/Login';
 import SignUp from './screens/SignUp'
 import Main from './screens/Main'
+import Chat from './screens/Chat'
 
 
 // const Drawer = createDrawerNavigator();
@@ -27,6 +28,7 @@ const App = (navigation) => {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="Main" component={Main} />
+        <Stack.Screen name="Chat" component={Chat} />
       </Stack.Navigator>
 
     </NavigationContainer >

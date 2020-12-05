@@ -16,9 +16,9 @@ export default class profile extends Component {
             <Image style={styles.avatar}
               source={{ uri: 'https://www.jibonpata.com/upload/photos/2019/07/3CZzyTPGmRGvF2IPXQmO_28_79c37bffe1f1f0df5b385cf1996d9d12_avatar_full.jpg' }} />
 
-            <Text style={styles.name}>John Doe </Text>
-            <Text style={styles.userInfo}>jhonnydoe@mail.com </Text>
-            <Text style={styles.userInfo}>Florida </Text>
+            <Text style={styles.name}>Ashraful Islam</Text>
+            <Text style={styles.userInfo}>ashraful@damsonsoft.com </Text>
+            <Text style={styles.userInfo}>Dhaka, Bangladesh </Text>
           </View>
         </View>
 
@@ -28,7 +28,8 @@ export default class profile extends Component {
               <Image style={styles.icon} source={{ uri: 'https://img.icons8.com/color/70/000000/cottage.png' }} />
             </View>
             <View style={styles.infoContent}>
-              <Text style={styles.info}>Home</Text>
+
+              <Text style={styles.info} >Home</Text>
             </View>
           </View>
 

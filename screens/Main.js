@@ -19,7 +19,7 @@ const HomeStackScreen = ({ navigation }) => (
   <HomeStack.Navigator
     screenOptions={{
       headerStyle: {
-        backgroundColor: "#122738",
+        backgroundColor: "#fff",
       },
       headerTintColor: "#fff",
       headerTitleStyle: {
@@ -31,14 +31,14 @@ const HomeStackScreen = ({ navigation }) => (
       name="Home"
       component={Home}
       options={{
-        headerLeft: () => (
-          <Icon.Button
-            name="ios-menu"
-            size={25}
-            backgroundColor="#122738"
-            onPress={() => navigation.openDrawer()}
-          ></Icon.Button>
-        ),
+        // headerLeft: () => (
+        //   <Icon.Button
+        //     name="ios-menu"
+        //     size={25}
+        //     color="#122738"
+        //     onPress={() => navigation.openDrawer()}
+        //   ></Icon.Button>
+        // ),
       }}
     />
   </HomeStack.Navigator>

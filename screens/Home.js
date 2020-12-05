@@ -15,7 +15,7 @@ const Container = styled.SafeAreaView`
 const Home = () => {
   return (
     <>
-      <StatusBar backgroundColor="#FFFFFF" barStyle="dark-content" />
+      <StatusBar backgroundColor="#FFF" barStyle="dark-content" />
       <Container>
         <ScrollView>
           <AppBar />
