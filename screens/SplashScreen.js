@@ -12,6 +12,8 @@ import LinearGradient from 'react-native-linear-gradient';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { useTheme } from '@react-navigation/native';
 
+
+
 const SplashScreen = ({ navigation }) => {
     const { colors } = useTheme();
 
@@ -38,9 +40,9 @@ const SplashScreen = ({ navigation }) => {
                 }]}>Stay connected with everyone!</Text>
                 <Text style={styles.text}>Sign in with account</Text>
                 <View style={styles.button}>
-                    <TouchableOpacity onPress={() => navigation.navigate('SignInScreen')}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Login')}>
                         <LinearGradient
-                            colors={['#08d4c4', '#01ab9d']}
+                            colors={['#122738', '#193549']}
                             style={styles.signIn}
                         >
                             <Text style={styles.textSign}>Get Started</Text>
@@ -65,7 +67,7 @@ const height_logo = height * 0.28;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#009387'
+        backgroundColor: '#122738'
     },
     header: {
         flex: 2,
@@ -85,7 +87,7 @@ const styles = StyleSheet.create({
         height: height_logo
     },
     title: {
-        color: '#05375a',
+        color: '#122738',
         fontSize: 30,
         fontWeight: 'bold'
     },

@@ -6,7 +6,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Icon from "react-native-vector-icons/Ionicons";
 const Tab = createMaterialBottomTabNavigator();
 
-import Splash from "./Splash";
 import Profile from "./Profile";
 import Home from "./Home";
 import Notification from "./Notification";
@@ -20,7 +19,7 @@ const HomeStackScreen = ({ navigation }) => (
   <HomeStack.Navigator
     screenOptions={{
       headerStyle: {
-        backgroundColor: "#0b2239",
+        backgroundColor: "#122738",
       },
       headerTintColor: "#fff",
       headerTitleStyle: {
@@ -36,7 +35,7 @@ const HomeStackScreen = ({ navigation }) => (
           <Icon.Button
             name="ios-menu"
             size={25}
-            backgroundColor="#0b2239"
+            backgroundColor="#122738"
             onPress={() => navigation.openDrawer()}
           ></Icon.Button>
         ),
@@ -49,7 +48,7 @@ const SplashStackScreen = ({ navigation }) => (
   <SplashStack.Navigator
     screenOptions={{
       headerStyle: {
-        backgroundColor: "#0b2239",
+        backgroundColor: "#122738",
       },
       headerTintColor: "#fff",
       headerTitleStyle: {
@@ -59,13 +58,13 @@ const SplashStackScreen = ({ navigation }) => (
   >
     <SplashStack.Screen
       name="Splash"
-      component={Splash}
+      component={SplashStack}
       options={{
         headerLeft: () => (
           <Icon.Button
             name="ios-menu"
             size={25}
-            backgroundColor="#0009387"
+            backgroundColor="#122738"
             onPress={() => navigation.openDrawer()}
           ></Icon.Button>
         ),
@@ -78,7 +77,7 @@ const ProfileStackScreen = ({ navigation }) => (
   <ProfileStack.Navigator
     screenOptions={{
       headerStyle: {
-        backgroundColor: "#0b2239",
+        backgroundColor: "#122738",
       },
       headerTintColor: "#fff",
       headerTitleStyle: {
@@ -94,7 +93,7 @@ const ProfileStackScreen = ({ navigation }) => (
           <Icon.Button
             name="ios-menu"
             size={25}
-            backgroundColor="#0009387"
+            backgroundColor="#122738"
             onPress={() => navigation.openDrawer()}
           ></Icon.Button>
         ),
@@ -107,7 +106,7 @@ const NotificationStackScreen = ({ navigation }) => (
   <NotificationStack.Navigator
     screenOptions={{
       headerStyle: {
-        backgroundColor: "#0b2239",
+        backgroundColor: "#122738",
       },
       headerTintColor: "#fff",
       headerTitleStyle: {
@@ -134,7 +133,7 @@ const NotificationStackScreen = ({ navigation }) => (
 
 const MainScreen = () => {
   return (
-    <Tab.Navigator initialRouteName="Home" activeColor="#fff">
+    <Tab.Navigator initialRouteName="Home" activeColor="#fff" screenOptions={{ headerShown: false }}>
       <Tab.Screen
         name="Home"
         component={HomeStackScreen}
@@ -148,7 +147,7 @@ const MainScreen = () => {
 
       <Tab.Screen
         name="Splash"
-        component={SplashStackScreen}
+        component={Profile}
         options={{
           tabBarLabel: "Splash",
           tabBarIcon: ({ color }) => (

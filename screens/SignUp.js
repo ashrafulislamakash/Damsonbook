@@ -16,7 +16,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Feather from 'react-native-vector-icons/Feather';
 
-const SignInScreen = ({ navigation }) => {
+const SignUp = ({ navigation }) => {
 
     const [data, setData] = React.useState({
         username: '',
@@ -177,14 +177,7 @@ const SignInScreen = ({ navigation }) => {
                             }
                         </TouchableOpacity>
                     </View>
-                    <View style={styles.textPrivate}>
-                        <Text style={styles.color_textPrivate}>
-                            By signing up you agree to our
-                </Text>
-                        <Text style={[styles.color_textPrivate, { fontWeight: 'bold' }]}>{" "}Terms of service</Text>
-                        <Text style={styles.color_textPrivate}>{" "}and</Text>
-                        <Text style={[styles.color_textPrivate, { fontWeight: 'bold' }]}>{" "}Privacy policy</Text>
-                    </View>
+
                     <View style={styles.button}>
                         <TouchableOpacity
                             style={styles.signIn}
@@ -219,7 +212,7 @@ const SignInScreen = ({ navigation }) => {
     );
 };
 
-export default SignInScreen;
+
 
 const styles = StyleSheet.create({
     container: {
@@ -286,3 +279,5 @@ const styles = StyleSheet.create({
         color: 'grey'
     }
 });
+
+export default SignUp;

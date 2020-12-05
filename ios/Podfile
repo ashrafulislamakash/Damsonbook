@@ -17,6 +17,10 @@ target 'damsonbook' do
   use_flipper!
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
   post_install do |installer|
     flipper_post_install(installer)
   end

@@ -1,22 +1,36 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createStackNavigator } from "@react-navigation/stack";
+// import { createDrawerNavigator } from "@react-navigation/drawer";
 
 // import Main from "./screens/Main";
-import { DrawerScreens } from './screens/DrawerContent'
-import SplashScreen from './screens/SplashScreen'
+// import { DrawerScreens } from './screens/DrawerScreens'
+import SplashScreen from './screens/SplashScreen';
+import Login from './screens/Login';
+import SignUp from './screens/SignUp'
+import Main from './screens/Main'
 
 
-const Drawer = createDrawerNavigator();
+// const Drawer = createDrawerNavigator();
+const Stack = createStackNavigator();
 
-const App = () => {
+const App = (navigation) => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator drawerContents={props => <DrawerScreens {...props} />}>
-        {/* <Drawer.Screen name="Splash" component={SplashStackScreen} /> */}
-        <Drawer.Screen name="HomeDrawer" component={SplashScreen} />
-      </Drawer.Navigator>
-    </NavigationContainer>
+      {/* //   <Drawer.Navigator drawerContents={props => <DrawerScreens {...props} />}>
+    //     <Drawer.Screen name="DrawerScreens" component={DrawerScreens} />
+    //     <Drawer.Screen name="HomeDrawer" component={SplashScreen} />
+    //   </Drawer.Navigator> */}
+
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Splash" component={SplashScreen} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="Main" component={Main} />
+      </Stack.Navigator>
+
+    </NavigationContainer >
+
   );
 };
 
