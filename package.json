@@ -36,7 +36,7 @@
     "react-native-tab-view": "^2.15.2",
     "react-native-unimodules": "~0.11.0",
     "react-native-vector-icons": "^7.1.0",
-    "react-native-web": "~0.13.12",
+    "react-native-web": "^0.15.0",
     "rn-keyboard-aware-tab-view": "0.0.5",
     "stream-chat": "^2.8.4",
     "styled-components": "^5.2.1"

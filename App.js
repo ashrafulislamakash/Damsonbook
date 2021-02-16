@@ -24,9 +24,9 @@ const App = (navigation) => {
     //   </Drawer.Navigator> */}
 
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Splash" component={SplashScreen} />
+        {/* <Stack.Screen name="Splash" component={SplashScreen} />
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="SignUp" component={SignUp} /> */}
         <Stack.Screen name="Main" component={Main} />
         <Stack.Screen name="Chat" component={Chat} />
       </Stack.Navigator>
